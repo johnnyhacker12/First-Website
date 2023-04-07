@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Hung Pham</title>
+    <link rel="icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body id="main">
+  
+    <!--Nagivation part-->
+   <nav id="blog-nav">
+        <h2><a href = "index.html">Hung Pham</a></h2>
+        <a href = "about.html" >About</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href = "blog.html" >Blog</a>
+        <br>
+        <br>
+   </nav>
+
+    <!--Questions/Blog-->
+    <div class="grid-container">
+        <div class="FAQ">
+            <h1>Frequently Asked Questions</h1>
+            <br>
+            <ol>
+                <li><strong>What is Computer Science?</strong></li>
+                <p><em>Computer Science</em> is basically a field where you can study <br>
+                    how computers work and algorithms. Later on, you can choose <br>
+                    to specialize in various of fields including: cybersecurity, <br>
+                    Artificial Intelligent, Cloud, etc. 
+                </p>
+
+                <li><strong>Why do you choose Computer Science?</strong></li>
+                <p>First reason is I had been a tech lover since I was a small kid. <br>
+                    Besides from playing games, I was exploring about <em>IP</em> and computer <br>
+                    components.<br>
+                    Second reason is the progress of technology in our world today, <br>
+                    I believe this field will never go out-of-date, there is a statistics<br>
+                    shown about how technology grows through years.
+                </p>
+
+                <!--Table of internet adoption rate in U.S-->
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Rate</th>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td>52%</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>65%</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>76%</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>86%</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>92%</td>
+                    </tr>
+                </table>
+                <p><cite>U.S. Internet Use Over Time</cite> by Abby McCain. Jan. 11, 2023</p>
+
+                <li><strong>What tools are you using in your study?</strong></li>
+                <p>I am in my first year so I only get to use a few tools and I will <br> 
+                    keep adding more to this list as I am progressing in my study: 
+                </p>
+                
+                <!--Unordered list-->
+                <ul>
+                    <li><a href="https://www.jetbrains.com/idea/">IntelliJ Idea (Java)</a></li>
+                    <li><a href="https://code.visualstudio.com/">Visual Studio Code (Overall)</a></li>
+                    <li><a href="https://www.figma.com/downloads/">Figma (Prototype)</a></li>
+                </ul>
+                <br>
+
+                <li><strong>Recently, there is a big tech layoffs happening.<br>
+                    What do you know about this?</strong></li>
+                <p>I think this video below will answer your question more clearly.</p>
+
+                <!--Video-->
+                <video width="320" height="240" controls>
+                    <source src="videos_sound/Tech Layoff.mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </ol>
+        </div>
+
+        <div class="cs-fields">
+            <img class="pic" src="images/AI.jpg" alt="cs-Artificial Intelligent" >
+            <img class="pic" src="images/cybersec.jpg" alt="cs-Cybersecurity" >
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <form id="ask" action="" method="POST" onsubmit="return confirmation();">
+        <p>
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="John Doe"> <br>
+            <label for="question">Enter your question:</label> <br>
+            <textarea id="question" name="question" placeholder="I want to ask about..." rows="5" col="10"></textarea> <br>
+            <button id="submit" type="submit">Submit</button>
+        </p>
+    </form>
+
+    <p class="footer">Made by Hung Pham</p>
+
+    <div>
+        <button id="change" onclick="brightColor()">Color 1</button> 
+        <button id="change" onclick="neutralColor()">Color 2</button>
+        <button id="change" onclick="defaultColor()">Default</button>
+    </div>
+    
+</body>
+</html>
